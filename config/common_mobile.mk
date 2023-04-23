@@ -93,5 +93,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageBlackTheme \
     RoundQSOverlay \
+    BrightnessSliderFilledOverlay \
+    BrightnessSliderThinOverlay \
     ThemePicker \
     ThemesStub
