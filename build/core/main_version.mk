@@ -6,7 +6,7 @@ endif
 
 # LineageOS System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.yaoyoro.version=$(LINEAGE_VERSION)
+    ro.yaoyoro.version=$(YAOYORO_VERSION)
 
 # Yaoyoro maintainer
 ADDITIONAL_SYSTEM_PROPERTIES += \
