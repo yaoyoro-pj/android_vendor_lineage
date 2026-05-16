@@ -20,20 +20,20 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
-    Launcher3QuickStepGo
+    RunaQuickStepGo
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Launcher3QuickStepGo
+    RunaQuickStepGo
 else
 PRODUCT_PACKAGES += \
-    Launcher3QuickStep
+    RunaQuickStep
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Launcher3QuickStep
+    RunaQuickStep
 endif
 
 PRODUCT_PACKAGES += \
-    Launcher3Overlay
+    RunaOverlay
 
 # Charger
 PRODUCT_PACKAGES += \
