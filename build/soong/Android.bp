@@ -450,7 +450,10 @@ soong_config_module_type {
     name: "surfaceflinger_mtk_extensions",
     module_type: "cc_defaults",
     config_namespace: "lineageMtkVars",
-    bool_variables: ["has_mtk_surfaceflinger"],
+    bool_variables: [
+        "has_mtk_surfaceflinger",
+        "has_mtk_ged",
+    ],
     properties: [ "cflags" ],
 }
 
@@ -459,6 +462,9 @@ surfaceflinger_mtk_extensions {
     soong_config_variables: {
         has_mtk_surfaceflinger: {
             cflags: ["-DMTK_SKIP_SKIA_EXTERNAL_TEXTURE_CACHE"],
+        },
+        has_mtk_ged: {
+            cflags: ["-DENABLE_MTK_GED_KPI"],
         },
     },
 }
