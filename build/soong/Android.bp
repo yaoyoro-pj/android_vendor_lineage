@@ -468,3 +468,20 @@ surfaceflinger_mtk_extensions {
         },
     },
 }
+
+soong_config_module_type {
+    name: "fastbootd_hax",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["bypass_lock_state"],
+    properties: [ "cppflags" ],
+}
+
+fastbootd_hax {
+    name: "fastbootd_hacks",
+    soong_config_variables: {
+        bypass_lock_state: {
+            cppflags: ["-DFASTBOOT_BYPASS_LOCK_STATE"],
+        },
+    },
+}
